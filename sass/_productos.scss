@@ -1,0 +1,22 @@
+/*PRODUCTOS*/
+.contenedorProducto{
+    display: grid;
+    margin: 49px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    font-weight: bold;
+
+
+
+
+}
+.fotoProductos{
+    padding: 63px;
+
+}
+.borderProductos{
+    width: 294px;
+    border: 1px solid black;
+    height: 265px;
+} 
+

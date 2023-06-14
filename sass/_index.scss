@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 1px;
+
+}
+
+.fondoPantalla{
+    background-image: url(http://bettcomm.com/themes/classic/assets/img/fondotransparente.jpg);
+    background-repeat: round;
+    background-attachment: fixed;
+    background-position: center center;
+}
+header{
+    background-color: rgb(249, 249, 249);
+    height: 100px; 
+}
+.liConteiner{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.liConteiner{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;  
+        li{
+            font-size: 22;
+            list-style: none;
+            a{
+                color: rgb(12, 11, 11);
+                text-decoration: none;  
+
+                &:hover{
+                    font-weight: bold;
+                    color:#111010;
+                }
+                
+            }
+
+        }
+    }  
+.contenedorFotos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+}
+.imagenes{
+    margin: 80px;
+    border-block-start-style: none;
+    width: 12px;    
+}
+h1{
+    margin: 42px;
+    text-align: center;
+}
+
+.fotoAbajo{
+    max-width: 100%;
+    height: auto;
+}
+form{
+    border: outset;
+    background-color: white;
+}
+.correo{
+    position: relative;
+    width: 800px;
+    left: 200px;
+}
+.moverr{
+    width: 294px;
+
+}
+.enviarMail{
+    width: 109px;
+}
+.colorBoton{
+    color: rgb(12, 11, 11);
+}
+.linkFoto{
+    text-decoration: none;
+    clear: both;
+    color: #7a7a7a;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+footer{
+    text-align: center;
+    display: flex;
+    border: outset;
+    right: 206px;
+    /* height: 175px; */
+    position: relative;
+    margin: 12px;
+    width: 45px;
+    background-color: white;
+    
+
+    a{
+        text-decoration: none;
+         color: rgb(155, 156, 162);
+     }
+     a:hover{
+         font-weight: bold;
+         color:#020202;
+     }
+
+     .refrescarFooter{
+        display: flex;
+        flex-direction: column;
+     }
+ }
+
+ .Logor{
+    height: 30px;
+    width: 30px;
+}
+
+
+
+
+
+
