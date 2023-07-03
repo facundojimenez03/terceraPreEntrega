@@ -1,3 +1,14 @@
-.tododetodo{
-    border: 3px solid black
+
+.fotoContacto{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .fotoContacto{
+        margin-top: 176px;
+    }
+    main{
+        margin: 12px;
+        
+    }
 }

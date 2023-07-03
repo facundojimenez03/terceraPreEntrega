@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 1px;
+  padding: 0px;
 }
 
 .fondoPantalla {
@@ -10,49 +10,38 @@
   background-position: center center;
 }
 
-header {
-  background-color: rgb(249, 249, 249);
-  height: 100px;
+.carousel {
+  margin: 41px;
+  height: 611px;
+  overflow: hidden;
 }
 
-.liConteiner {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-}
-
-.liConteiner {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-}
-.liConteiner li {
-  font-size: 22;
-  list-style: none;
-}
-.liConteiner li a {
-  color: rgb(12, 11, 11);
+a {
   text-decoration: none;
+  color: black;
+  transition: background-color 0.5s;
 }
-.liConteiner li a:hover {
-  font-weight: bold;
-  color: #111010;
+
+a:hover {
+  background-color: rgb(212, 211, 206);
 }
 
 .contenedorFotos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
 }
 
-.imagenes {
-  margin: 80px;
+.row {
+  justify-content: center;
+}
+
+.w-100 {
+  height: 600px;
+}
+
+.card {
+  margin: 55px;
   border-block-start-style: none;
-  width: 12px;
 }
 
 h1 {
@@ -65,29 +54,6 @@ h1 {
   height: auto;
 }
 
-form {
-  border: outset;
-  background-color: white;
-}
-
-.correo {
-  position: relative;
-  width: 800px;
-  left: 200px;
-}
-
-.moverr {
-  width: 294px;
-}
-
-.enviarMail {
-  width: 109px;
-}
-
-.colorBoton {
-  color: rgb(12, 11, 11);
-}
-
 .linkFoto {
   text-decoration: none;
   clear: both;
@@ -97,37 +63,79 @@ form {
   margin-bottom: 1.5rem;
 }
 
+.correo {
+  width: 50%;
+}
+
 footer {
-  text-align: center;
-  display: flex;
-  border: outset;
-  right: 206px;
-  /* height: 175px; */
-  position: relative;
-  margin: 12px;
-  width: 45px;
-  background-color: white;
-}
-footer a {
-  text-decoration: none;
-  color: rgb(155, 156, 162);
-}
-footer a:hover {
-  font-weight: bold;
-  color: #020202;
-}
-footer .refrescarFooter {
-  display: flex;
-  flex-direction: column;
+  background-image: url(http://bettcomm.com/themes/classic/assets/img/fondotransparente.jpg);
+  width: 99%;
+  height: 157px;
+  margin: 4px;
+  border: inset;
 }
 
-.Logor {
-  height: 30px;
-  width: 30px;
+@media screen and (max-width: 500px) {
+  .fotoAbajo {
+    width: 400px;
+  }
+  .container-fluid {
+    display: flex;
+    justify-content: space-around;
+  }
+  .carousel {
+    display: none;
+  }
+  .fondoPantalla {
+    background-image: url(http://bettcomm.com/themes/classic/assets/img/fondotransparente.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .contenedorFotos {
+    margin: 2px;
+    justify-content: center;
+  }
+  footer {
+    height: 240px;
+    width: 97%;
+  }
 }
-
+@media screen and (max-width: 768px) {
+  .container-fluid {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  h1 {
+    margin: 90px;
+  }
+  .carousel {
+    display: none;
+  }
+  .fondoPantalla {
+    background-image: url(http://bettcomm.com/themes/classic/assets/img/fondotransparente.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .contenedorFotos {
+    justify-items: center;
+  }
+  .correo {
+    width: 100%;
+  }
+  .fotoAbajo {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .carousel {
+    display: none;
+  }
+}
 .imagen {
-  width: 1847px;
+  width: 100%;
   height: 861px;
   display: flex;
   margin-block: 42px;
@@ -152,29 +160,39 @@ li {
   font-weight: bold;
 }
 
-button {
-  color: rgb(1, 1, 1);
-}
-button:hover {
-  color: rgb(19, 119, 64);
-  transform: skewX(20deg);
-}
-
 .contenedorMVV {
   display: flex;
-  border: outset;
-  margin: 12px;
-  width: 1819px;
+  margin: 20px;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
 }
 
 .negrita {
   font-weight: bold;
 }
 
+.ulSobreNos {
+  display: flex;
+  margin-top: 50px;
+  text-decoration: none;
+  margin: 50px 0px;
+  list-style-type: none;
+  width: 99%;
+}
+
+.olSobreNos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+}
+
 .sobreNosotros {
   display: grid;
   margin: 60px;
   grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
 }
 
 .nosotros {
@@ -211,155 +229,147 @@ button:hover {
 }
 
 @media screen and (max-width: 767px) {
-  .contenedorFotos {
-    display: grid;
+  .contenedorProducto {
+    display: flex;
     grid-template-columns: repeat(2, 1fr);
   }
-  .contenedorProducto {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  .imagen {
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .sobreNosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .imgIntro {
+    display: none;
+  }
+  .titulo {
+    margin-top: 180px;
+  }
+  .ulSobreNos {
+    flex-direction: column;
+  }
+  .header {
+    overflow-x: hidden;
+  }
+  .contenedorMVV {
+    display: flex;
+    margin-left: 57px;
+    width: 370px;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 992px) {
-  .contenedorFotos {
-    display: grid;
-    grid-template-columns: auto;
-  }
-  .contenedorProducto {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 1200px) {
-  .contenedorFotos {
-    display: grid;
-    grid-template-columns: auto;
-  }
-  .contenedorProducto {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 1280px) {
-  .contenedorProducto {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  .imgIntro {
+    display: none;
   }
 }
 .imagenAccesorios {
-  width: 1711px;
-  height: 597px;
+  width: 100%;
+  height: 665px;
 }
 
 .fotosAcessorios {
-  display: grid;
   margin: 49px;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
 }
 
 .imgAccesorios {
-  padding: 63px;
+  display: flex;
   border: 1px solid black;
+  width: 248px;
+  margin: 59px;
+  justify-content: center;
+  flex-direction: column;
 }
 
-/*PRODUCTOS*/
+.footer {
+  background-image: url(http://bettcomm.com/themes/classic/assets/img/fondotransparente.jpg);
+  width: 100%;
+  height: 157px;
+  margin: 4px;
+}
+
+h1 {
+  margin: 80px;
+}
+
 .contenedorProducto {
-  display: grid;
-  margin: 49px;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  font-weight: bold;
+  margin: 30px;
+  display: flex;
 }
 
-.fotoProductos {
-  padding: 63px;
+.imgintro {
+  margin: 20px;
 }
 
-.borderProductos {
-  width: 294px;
-  border: 1px solid black;
-  height: 265px;
+.fotoContacto {
+  width: 100%;
 }
 
-.tododetodo {
-  border: 3px solid black;
+@media screen and (max-width: 768px) {
+  .fotoContacto {
+    margin-top: 176px;
+  }
+  main {
+    margin: 12px;
+  }
 }
-
 * {
   margin: 0;
-  padding: 1px;
+  padding: 0;
 }
 
-header {
-  background-color: rgb(249, 249, 249);
-  height: 100px;
+.descripcionPoducto {
+  width: 400px;
+  justify-content: center;
 }
 
-.liConteiner {
+.accordion-body {
+  width: 423px;
+}
+
+.fotosProductos {
   display: flex;
-  width: 100%;
   justify-content: space-around;
-  align-items: center;
-  height: 100%;
 }
 
-.liConteiner {
+@media screen and (max-width: 768px) {
+  .imagenproducto {
+    width: 200px;
+    margin-top: 250px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.descripcionPoducto {
+  width: 400px;
+  justify-content: center;
+}
+
+.accordion-body {
+  width: 423px;
+}
+
+.fotosProductos {
   display: flex;
-  width: 100%;
   justify-content: space-around;
-  align-items: center;
-  height: 100%;
-}
-.liConteiner li {
-  font-size: 22;
-  list-style: none;
-}
-.liConteiner li a {
-  color: rgb(12, 11, 11);
-  text-decoration: none;
-}
-.liConteiner li a:hover {
-  font-weight: bold;
-  color: #111010;
 }
 
-.imagenproducto {
-  margin: 30px;
-}
-
-.productoDestacados {
-  text-decoration: none;
-  color: black;
-}
-
-.contenedorFooter {
-  text-align: center;
-  display: flex;
-  border: outset;
-  margin: 12px;
-  width: 1825px;
-}
-
-.contenedorFooter {
-  text-align: center;
-  display: flex;
-  border: outset;
-  margin: 12px;
-  width: 2031px;
-  flex-direction: row-reverse;
-}
-.contenedorFooter a {
-  text-decoration: none;
-  color: rgb(155, 156, 162);
-}
-.contenedorFooter a:hover {
-  font-weight: bold;
-  color: #020202;
-}
-.contenedorFooter .refresh {
-  position: relative;
-  left: 200px;
+@media screen and (max-width: 768px) {
+  .imagenproducto {
+    width: 200px;
+    margin-top: 250px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

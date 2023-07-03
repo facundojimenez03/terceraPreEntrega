@@ -13,99 +13,67 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    
-    <header class="header">
-        <nav>
-            <ul class="liConteiner">
-                <li class="logoConteiner"> <a href="../index.html"><img src="../img/my-shop-logo-1597268362-removebg-preview.png" alt="logofoto"></a></li>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="../pages/acecsorio.html">ACCESORIOS</a></li>
-                <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             PRODUCTOS
-          </a>
-          
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="./productos.html">PRODUCTOS</a></li>
-            <li><a class="dropdown-item" href="../index.html">PRODUCTOS DESTACADOS</a></li>
-          </ul>
-        </li> 
-                <li><a href="../pages/contacto.html">CONTÁCTENOS</a></li>
-                <li><a href="../pages/sobreNosotros.html">SOBRE NOSOTROS</a></li>   
-            </ul>
-        </nav>
-        <h1>ACCESORIOS</h1>
-
+  <section class="fondoPantalla">
+    <header class="header"> 
+      <title>bettcomm</title>
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+        <a href="../index.html"><img src="../img/my-shop-logo-1597268362-removebg-preview.png" alt=""></a>
+          <a href="../index.html">HOME</a>
+          <a href="./acecsorio.html">ACCESORIOS</a>
+          <a href="./productos.html">NUESTROS PRODUCTOS </a> 
+          <a href="./sobreNosotros.html">SOBRE NOSOTROS</a> 
+          <a href="./contacto.html">CONTACTANOS</a> 
+          </div>
+          </nav>
+        </header>
+        <main>
         <img class="imagenAccesorios" src="http://bettcomm.com/img/cms/Categorias.jpg" alt="">
-
-        <div class="fotosAcessorios">
-            
-            <div class="imgAccesorios"data-aos="flip-right"><img src="http://bettcomm.com/147-home_default/btc-drop-1-ov-ac.jpg" alt=""><p>BTC-DROP-2-OV-AC</p></div>
-
-            <div class="imgAccesorios" data-aos="flip-right"><img src="http://bettcomm.com/176-home_default/btc-ad-scapc-sx.jpg" alt=""><p>BTC-AD-SC/APC-SX</p></div>
-
-            <div class="imgAccesorios"data-aos="flip-right"><img src="http://bettcomm.com/174-home_default/btc-fast-scupc.jpg" alt=""><p>BTC-AD-LC/UPC-SX</p></div>
-
-            <div class="imgAccesorios"data-aos="flip-right"><img src="http://bettcomm.com/170-home_default/btc-plc1x4-scapc.jpg" alt=""><p>BTC-FAST-SC/UPC</p></div>
-            
-            <div class="imgAccesorios" data-aos="flip-right"><img src="http://bettcomm.com/167-home_default/btc-rs-02.jpg" alt=""><p>BTC-PLC1X16-SC/APC</p></div>
-            
-            <div class="imgAccesorios" data-aos="flip-right"><img src="http://bettcomm.com/186-home_default/btc-scapc-scapc-2m-sm-sx.jpg" alt=""><p>BTC-FOSC-144F</p></div>
-            <div class="imgAccesorios" data-aos="flip-right"><img src="data:image/jpeg;base64,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" alt=""><p>BTC-AD-LC/UPC-DX</p></div>
-            <div class="imgAccesorios" data-aos="flip-right"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSm_bKpI0NEBpjRPWK2shqeBz2RCkcSX2MAw&usqp=CAU" alt=""><p>BTC-ADSS80-24F</p></div>
-            </div>
-            
-            <footer class="contenedorFooter">
-                <div class="row footer">
-                  <div class="col-md-3">
-                <p >PRODUCTOS</p>
-                <a  href="./pages/acecsorio.html">ACCESORIOS</a>
-                <a href="./pages/productos.html">PRODUCTOS</a>
-                <a href="./pages/productoDestacado1.html">PRODUCTO MAS VENDIDO</a>
-                </div>
-              </div>
-      
-      
-                <div class="row footer">
-                  <div class="col-md-3">
-                <p >OUR COMPANY</p>
-                <a  href="./pages/contactus.html">CONTACT US</a>
-                <a href="./pages/sobreNosotros.html">SOBRE NOSOTROS</a>
-                </div>
-              </div>
-      
-              <div class="row footer">
-                <div class="col-md-3">
-              <p >INFORMACIÓN DE LA TIENDA</p>
-             <P>Bettcomm
-              United States
-              Envíenos un correo electrónico: infobtc@bettcomm.com</P>
-
-
-                    
-                    <a href="./index.html">© 2023 - Bettcomm by all rights reserved</a>
-                  </div>
-                  </div>
-      
-            </div>
-              </div>
-      
-              <div class="row footer">
-                <div class="col-md-3">
-             <img src="http://bettcomm.com/img/cms/BETTCOMM-01.jpg" alt="">
-              
-            </div>
-              </div>
-      
-              
                 
-            
-         
-           </header>       
-      
-            </footer>    
-            <!-- PONER FOOTER --> 
+        <div class="fotosAcessorios">
+          <div class="row">    
+            <h1 class="col-xl-12 col-md-12 col-xs-12">ACCESORIOS</h1>
+            <div class="imgAccesorios col-xl-4 col-md-4 col-xs-12" data-aos="flip-right"><img src="http://bettcomm.com/147-home_default/btc-drop-1-ov-ac.jpg" alt=""><p>BTC-AD-SC/APC-SX</p></div>
 
+            <!-- <img src="   " class="img-thumbnail" alt="..."> -->
+
+            <div class="imgAccesorios col-xl-4 col-md-4 col-xs-12" data-aos="flip-right"><img src="http://bettcomm.com/176-home_default/btc-ad-scapc-sx.jpg" alt=""><p>BTC-AD-SC/APC-SX</p></div>
+
+            <div class="imgAccesorios col-xl-4 col-md-4 col-xs-12"data-aos="flip-right"><img src="http://bettcomm.com/174-home_default/btc-fast-scupc.jpg" alt=""><p>BTC-AD-LC/UPC-SX</p></div>
+
+            <div class="imgAccesorios col-xl-4 col-md-6 col-xs-12"data-aos="flip-right"><img src="http://bettcomm.com/170-home_default/btc-plc1x4-scapc.jpg" alt=""><p>BTC-FAST-SC/UPC</p></div>
+            
+            <div class="imgAccesorios col-xl-4 col-md-6 col-xs-12" data-aos="flip-right"><img src="http://bettcomm.com/167-home_default/btc-rs-02.jpg" alt=""><p>BTC-PLC1X16-SC/APC</p></div>
+            
+            
+            <div class="imgAccesorios col-xl-4 col-md-6 col-xs-12" data-aos="flip-right"><img src="http://bettcomm.com/186-home_default/btc-scapc-scapc-2m-sm-sx.jpg" alt=""><p>BTC-FOSC-144F</p></div>
+            <div class="imgAccesorios col-xl-4 col-md-6 col-xs-12" data-aos="flip-right"><img src="data:image/jpeg;base64,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" alt=""><p>BTC-AD-LC/UPC-DX</p></div>
+            <div class="imgAccesorios col-xl-4 col-md-6 col-xs-12" data-aos="flip-right"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSm_bKpI0NEBpjRPWK2shqeBz2RCkcSX2MAw&usqp=CAU" alt=""><p>BTC-ADSS80-24F</p></div>
+            </div>
+            </div>
+          </main>
+          <footer>
+            <div class="footer">
+              <p><i>BETCOMM <a href="./index.html" target="_blank">Bettcomm United States Envíenos un correo electrónico: infobtc@bettcomm.com · Información de la tienda. © 2023 - Bettcomm by all rights reserved.</a></i></p>
+      
+                <p>REDES SOCIALES</p>
+                  
+  
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAmVBMVEVHcEwg32Al1WUl02cl1GYl02Ul02Ym02Yl0mUg12Ao12Al1Gcm02Yl02Yl1GUl1GUl02Yk02Ygz2goz2gl1Gcl1GYk1GYl1WUl02cgz3Am1WYl1GYm02Ygz2Ak02Ql0mYk0WYj0mYl02Uo02Ql0mYn0WYn1GYm0mYm0mUq1Wom0WYj02Um0mYl02Yl0mYlz2Un0WQq1WUj02cilIlXAAAAM3RSTlMAEGCQz+//r2AgIJ9/78+/0IAgIN/fcDDQEH+PgBBAoIBQv0DvcHBQsDCAkKDPjzBwMJAU6DEhAAABZElEQVR4AWTTBbajUBBF0YsdiBAixN1d5z+4/vBYb0Gzo8DFqgrJclzPDyDww6ihuqYXYNGqRdr55rgThklMPdLsAnGvr9wgSoFhKdEcQjxSSRaJx+Xtk74qBmEp0YXJVP/rwdBRZgbpVHUhzPMTBMT97HcRqWKZwkrSGjbFhaxUsYWdpCGpTA5PVQk42kNLfw5A7KjiCCctiiOTOatiAC1dwNGfIZD2VXVgqA5DZRbAVarqEGtYBJYHuKl+lTagCBjXA/lRjLvtYMMGiPUAR8YT4kjSi3Cv3IGdjuDKWD6BTjQD2DmSxuBlXztb/TuWY6p7NvUsD4qRynbhWNS6PG6mZDNoFQVwVPL+LPLiN4ucDviqMf3P5tS2s76d0PTUNNFRxX5oBzEBZ//ZBeUnpbnGDvoS4oDc7rN3JOf72QH8pnbwcjEVqZ3PNdDxtlNFCVYSyUo8dypjul20kqT1byABBAAASawYPAmTfuIAAAAASUVORK5CYII=" alt="foto whatapp">
+                  <a href="tel:3518187285">3518187285</a>
+  
+                  <img src="data:image/png;base64,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" alt="mail">
+                  <a href="https://www.instagram.com/bettcomm/">instagram</a>
+  
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAgUlEQVR4Ae3OsQ2AMAxEUcNkjJIRsgGUbMUMhoKKGdLQB6VwhdAVhgDSneTW/wln47jQLn1o5lzlROMZUCduly4BT8863wWM3ZbXab89XH6W3xDghoAwBLghIAwBDggIOwAAAsJOAICAsAPguN8CCCCAAE3vAkRjnbimIDpYl+O4A0d6of2LwEy9AAAAAElFTkSuQmCC" alt="mail">
+                    bettcommunication@gmail.com
+                    
+                 
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEf0lEQVR4AWJwL/AZUEyUIkDt9QDcyhYGALhRjai2bVvXtl1c27atwbNt27b9shvbyYvzv9N07k7N7c6s9R3/B556iqZvaWFL6qZmyionrJFOmPWEIDnvRR6N9SI/POVFcdX4FyV1Uw5Jpy5olFVNCBM+9ZQfaQDdQw8lSppnbhHlV3+CB0SqeFS2BWNw3DwqC3heIcCjMgGjcwCjsW08BtfIj8v+HT1/XXvxagMAUEcMgOefZ6r3HmoTJOV9iwdGOTw/G+KKICCIz5FIZy+9pbl2LQ4AKMMC6LcfY6taNj3FD0u28ihM4sPDXulshzC54HnVrsPlQwZoZ81iikub7sdDYl3Eh0axYig3RNkVv0smzCoeFKDZuzdE2jzjXswvwkZ8hAwEleUWppf8pNy2u6hfABw7RhXlVa7Ag6PNpP28e064BemlT0jad3L7BKg27ynjh6XwSPkhjQ2C2CwQ5VUBzk4AosX4htski1oO9QJ8U1zMEESnH0TKUf8cD4wGzYETYP/tT3AIhGD94muQzV0Onm9TmIBzE7+QTFvM7QYQlTfE4OxEIRmpV67aAG6TGboujn8xECTldwL9Ixzi/Mo1AEAhALJ5yw4goY2MrP/vjXeg5+K220HZvhXuNGlRSf17uvX7WB4AAFAFqUUvoW4VyACYX3wNwO3uDrDZQbFiHQHAA6LEwrTKaA/A+sTzyYLojB/Iqu3yRWvApdF2A9h/+R0EiXldW4RZvfPQPA9AUtyQgfuG/0Jac/OPAGXbFrD99Cs4pTKwvPcRiMubiZbgWWksq7R64iYPAFXACiwwSkBqu6dzAOckAj88FXBmHPTRnVt5DE4nQL1h5zxhfC4x2Iz1SgC8gjsBaFzPwby5v5P0YaIYZFMXgGJJC4gKa3rnACXEinPiOwHK9XvScVb8zyT93JPlusu3wKU3ADidYP/jL5DPXd6tDqD4wSJf0rreA9CicR+PSH2fUI5ylU6eBy6jCboulo8+89QHAhAQaTAcPFVFdETijNLrSOgcNQAlQnvqEoDD2Q3g0ulBmFpEPCeIz/6zI3QjAKpNe2Zh/pFmMgCaY2fB7XB0B+gNBAAlFCST5t4je/PNAAIgWrGRIyqq/YIUwNGBAWjE1SlbNk/vNhiBlxdFOW9FK7rpHlMAnQOS8bPe6oiye8UDplffjxDlVLyKohfXmADSioAfkSbWbNlZ029Iptt5uFhcUCNDHyIdIC5p0EqnL9yAUu/dLwDef5+u2rp3hTC1UE4gSAC4LRal/trt27JdFwP6iwm7xYbq/SdbJOXNeozCdJEAkKO1Da2+Q54XwDffMAwnLlSLi2o/5rPinSMEuND6O1rXED8f1swIgGL7/NtM1d6j58UVzVLUe9kwOts9SECCAGdsKALCAWAvWnNGPTcEDPM13v1QpubkxYPSmkkv8aPSvkPzRJswpQAEURkdUzBAx0Y8NPFH1Ire1x4/u9NmNGYCAJ2k2XF3jO7RZ5KMDz06R7Pz4GLZgpWLla2bF2uOn5uqP3s2Bfg61nCn5/8DUZexUA4vqhcAAAAASUVORK5CYII=" alt="">
+                  <a href="https://www.isecom.ar/">isecom</a>
+
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -113,8 +81,8 @@
         AOS.init();
       </script>
 
+</section>
 
- </header>   
 </body>
 </html>
 

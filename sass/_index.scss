@@ -1,86 +1,50 @@
 *{
     margin: 0;
-    padding: 1px;
-
+    padding: 0px;
 }
-
 .fondoPantalla{
     background-image: url(http://bettcomm.com/themes/classic/assets/img/fondotransparente.jpg);
     background-repeat: round;
     background-attachment: fixed;
     background-position: center center;
 }
-header{
-    background-color: rgb(249, 249, 249);
-    height: 100px; 
+.carousel{
+    margin: 41px;
+    height: 611px;
+    overflow: hidden;
 }
-.liConteiner{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-}
-
-.liConteiner{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;  
-        li{
-            font-size: 22;
-            list-style: none;
-            a{
-                color: rgb(12, 11, 11);
-                text-decoration: none;  
-
-                &:hover{
-                    font-weight: bold;
-                    color:#111010;
-                }
-                
-            }
-
-        }
-    }  
+a {
+    text-decoration: none;
+    color: black;
+    transition: background-color .5s;
+  }
+  
+  a:hover {
+    background-color: rgb(212, 211, 206);
+  }
 .contenedorFotos{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    flex-wrap: wrap;
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: center;
 }
-.imagenes{
-    margin: 80px;
+.row{
+    justify-content: center;
+}
+.w-100 {
+       height: 600px;
+} 
+.card{
+    margin: 55px;
     border-block-start-style: none;
-    width: 12px;    
 }
 h1{
     margin: 42px;
     text-align: center;
 }
-
 .fotoAbajo{
     max-width: 100%;
     height: auto;
-}
-form{
-    border: outset;
-    background-color: white;
-}
-.correo{
-    position: relative;
-    width: 800px;
-    left: 200px;
-}
-.moverr{
-    width: 294px;
-
-}
-.enviarMail{
-    width: 109px;
-}
-.colorBoton{
-    color: rgb(12, 11, 11);
 }
 .linkFoto{
     text-decoration: none;
@@ -90,43 +54,81 @@ form{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
+.correo{
+    width: 50%;
+}
+footer {
+    background-image: url(http://bettcomm.com/themes/classic/assets/img/fondotransparente.jpg);
+    width: 99%;
+    height: 157px;
+    margin: 4px;
+    border: inset;
+}
+@media screen and (max-width: 500px){
 
-
-
-footer{
-    text-align: center;
-    display: flex;
-    border: outset;
-    right: 206px;
-    /* height: 175px; */
-    position: relative;
-    margin: 12px;
-    width: 45px;
-    background-color: white;
-    
-
-    a{
-        text-decoration: none;
-         color: rgb(155, 156, 162);
-     }
-     a:hover{
-         font-weight: bold;
-         color:#020202;
-     }
-
-     .refrescarFooter{
+    .fotoAbajo{
+        width: 400px;
+    }
+    .container-fluid {
         display: flex;
-        flex-direction: column;
-     }
- }
-
- .Logor{
-    height: 30px;
-    width: 30px;
+        justify-content: space-around;
+        
+        // flex-direction: column;
+    }
+    .carousel{
+    display: none;
+    }
+   .fondoPantalla{
+    background-image: url(http://bettcomm.com/themes/classic/assets/img/fondotransparente.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    // background-attachment: fixed;
+    // background-position: center center;
+    
+   }
+.contenedorFotos{
+    margin: 2px;
+    justify-content: center;
 }
 
+footer{
+    height: 240px;
+    width: 97%;
+}
 
+}
+@media screen and (max-width: 768px){
+    .container-fluid {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    h1{
+        margin: 90px;
+    }
+    .carousel{
+    display: none;
+    }
+   .fondoPantalla{
+    background-image: url(http://bettcomm.com/themes/classic/assets/img/fondotransparente.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+   height: 100%;
+}
+.contenedorFotos{
+    justify-items: center;
+}
+.correo{
+    width: 100%;
+}
+.fotoAbajo{
+    width: 100%;
+}
+}
 
-
-
-
+@media screen and (max-width: 992px){
+    .carousel{
+        display: none;
+        }
+}

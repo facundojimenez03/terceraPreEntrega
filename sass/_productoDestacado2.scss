@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.descripcionPoducto{
+    width: 400px;
+    justify-content: center;
+}
+.accordion-body {
+    width: 423px;
+}
+.fotosProductos{
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width: 768px){
+    .imagenproducto{
+        width: 200px;
+        margin-top: 250px;
+    }
+}
